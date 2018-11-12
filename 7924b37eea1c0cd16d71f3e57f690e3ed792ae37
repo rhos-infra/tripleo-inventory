@@ -25,6 +25,30 @@
     },
     {
       "key": {
+        "uuid": "62f0f771_d104abd7",
+        "filename": "README.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 31,
+      "author": {
+        "id": 1008672
+      },
+      "writtenOn": "2018-11-12T13:48:49Z",
+      "side": 1,
+      "message": "Spaces are required since this is a markdown.\nSo in order to get the new line, I need extra spaces.",
+      "parentUuid": "8070ef71_0a038866",
+      "range": {
+        "startLine": 31,
+        "startChar": 62,
+        "endLine": 31,
+        "endChar": 64
+      },
+      "revId": "7924b37eea1c0cd16d71f3e57f690e3ed792ae37",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": true
+    },
+    {
+      "key": {
         "uuid": "a711baa1_d144e7d4",
         "filename": "infrared_inventory_plugin/roles/tripleo_inventory",
         "patchSetId": 1
@@ -39,6 +63,24 @@
       "revId": "7924b37eea1c0cd16d71f3e57f690e3ed792ae37",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "61b31115_addd1f2a",
+        "filename": "infrared_inventory_plugin/roles/tripleo_inventory",
+        "patchSetId": 1
+      },
+      "lineNbr": 1,
+      "author": {
+        "id": 1008672
+      },
+      "writtenOn": "2018-11-12T13:48:49Z",
+      "side": 1,
+      "message": "Don\u0027t know.\nI can change it to the root folder.\nNot important for me.",
+      "parentUuid": "a711baa1_d144e7d4",
+      "revId": "7924b37eea1c0cd16d71f3e57f690e3ed792ae37",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": true
     }
   ]
 }
