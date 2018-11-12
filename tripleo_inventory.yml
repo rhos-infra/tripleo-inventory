@@ -1,0 +1,7 @@
+---
+
+- name: TripleO Inventory generation
+  hosts: localhost
+  gather_facts: False
+  roles:
+    - tripleo_inventory
