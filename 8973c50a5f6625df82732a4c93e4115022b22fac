@@ -1,0 +1,9 @@
+Code-Review+2: Avishay Mahluf <amachluf@redhat.com>
+Code-Review+2: Yarboa <yrachman@redhat.com>
+Code-Review+2: Ziv Greenberg <zgreenbe@redhat.com>
+Verified+1: Maxim Babushkin <mbabushk@redhat.com>
+Submitted-by: Maxim Babushkin <mbabushk@redhat.com>
+Submitted-at: Wed, 14 Nov 2018 11:23:23 +0000
+Reviewed-on: https://review.gerrithub.io/432836
+Project: rhos-infra/tripleo-inventory
+Branch: refs/heads/master
