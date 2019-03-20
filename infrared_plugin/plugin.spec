@@ -58,6 +58,12 @@ subparsers:
                           Define the groups, Hypervisor host should be added to.
                           Multiple groups should be separated with comma.
                       default: 'hypervisor,shade'
+                  undercloud-only:
+                      type: Bool
+                      help: |
+                          Create inventory file with the underlcoud details only.
+                          Could be used when overcloud nodes are unreachable.
+                      default: 'false'
                   venv-path:
                       type: Value
                       help: Virtual environment path

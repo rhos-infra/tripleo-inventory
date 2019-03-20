@@ -40,7 +40,7 @@
 
     - name: Set undercloud only
       set_fact:
-        undercloud_only: other.undercloud.only
+        undercloud_only: "{{ other.undercloud.only }}"
 
     - name: Set hypervisor groups
       set_fact:
