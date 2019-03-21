@@ -1,0 +1,8 @@
+Verified+1: Maxim Babushkin <mbabushk@redhat.com>
+Code-Review+2: Vadim Khitrin <vkhitrin@redhat.com>
+Code-Review+2: <yrachman@redhat.com>
+Submitted-by: Maxim Babushkin <mbabushk@redhat.com>
+Submitted-at: Thu, 21 Mar 2019 15:16:55 +0000
+Reviewed-on: https://review.gerrithub.io/c/rhos-infra/tripleo-inventory/+/448502
+Project: rhos-infra/tripleo-inventory
+Branch: refs/heads/master
