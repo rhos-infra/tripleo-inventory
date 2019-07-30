@@ -54,6 +54,8 @@
   when: ssh_pass is defined
 
 - name: Gather undercloud node details
+  vars:
+    ansible_python_interpreter: /usr/libexec/platform-python 
   setup:
   delegate_to: "{{ groups['undercloud'] | first }}"
   delegate_facts: True
