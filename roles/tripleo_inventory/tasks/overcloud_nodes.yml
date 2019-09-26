@@ -4,7 +4,7 @@
     # Delete the venv in order to avoid packages conflicts
     - name: Delete existing venv if exists
       vars:
-        ansible_python_interpreter: /usr/libexec/platform-python 
+        ansible_python_interpreter: /usr/libexec/platform-python
       file:
         path: "{{ venv_path }}"
         state: absent
@@ -22,18 +22,20 @@
         name: "{{ item }}"
         state: present
       loop: "{{ pkg_ver_list | flatten(levels=1) }}"
-
-    - block:
-        - name: Install pip package
-          easy_install:
-            name: pip
-
-        - name: Install virtualenv
-          pip:
-            name: virtualenv
-            version: '15.1.0'
-      when: hostvars[groups['undercloud'][0]]['ansible_python']['version']['major'] == 2
   become: true
+
+- name: Install venv if python2 present
+  block:
+    - name: Install pip package
+      easy_install:
+        name: pip
+
+    - name: Install virtualenv
+      pip:
+        name: virtualenv
+        version: '15.1.0'
+  become: True
+  when: hostvars[groups['undercloud'][0]]['ansible_python']['version']['major'] == 2
 
 # A pip bug prevents us to use the pip module for the python3 venv creation.
 # Remove when fixed.
@@ -70,10 +72,10 @@
   delegate_to: localhost
 
 - name: Grab auth data from stackrc file and publish it as YAML
-  vars:
-    ansible_python_interpreter: /usr/libexec/platform-python
   ### ToDo(MaximB): Convert the task to more generic execution.
   ###               Implement reuse.
+  vars:
+    ansible_python_interpreter: /usr/libexec/platform-python
   shell: |
       source "{{ rc_file_path | default('/home/stack/stackrc') }}"
       echo "
