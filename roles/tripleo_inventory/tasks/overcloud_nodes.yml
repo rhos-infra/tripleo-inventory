@@ -33,7 +33,7 @@
     - name: Install virtualenv
       pip:
         name: virtualenv
-        version: '15.1.0'
+        version: '16.7.9'
   become: True
   when: hostvars[groups['undercloud'][0]]['ansible_python']['version']['major'] == 2
 
@@ -53,8 +53,8 @@
     name:
       - pip>=10.0.1
       - setuptools>=39.0.0
-      - pytz>=2017.3
-      - shade>=1.25.0
+      - openstacksdk>=0.39,<0.40.0 ; python_version < '3'
+      - openstacksdk>=0.39 ; python_version >= '3'
     virtualenv: "{{ venv_path }}"
 
 - name: Fetch private key from the undercloud host
