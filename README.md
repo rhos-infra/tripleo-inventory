@@ -1,7 +1,7 @@
 # TripleO Inventory
 
 ## Description
-TripleO Inventory play will generate a new inventory file from the provided Undercloud/Hypervisor host.
+TripleO Inventory play will generate a new inventory file from the provided Undercloud/Hypervisor host on the existing deployment.
 
 From time to time, we may get an already installed Openstack environment for work/testing/etc.
 In order to be able to run an Ansible playbooks or different ad-hoc commands against the overcloud nodes,
