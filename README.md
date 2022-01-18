@@ -1,5 +1,8 @@
 # TripleO Inventory
 
+**NOTE** This is archived and deprecated due to sync issues with Gerrit -> GerritHub.
+Migrating to https://github.com/rhos-infra/tripleo-clouds-inventory
+
 ## Description
 TripleO Inventory play will generate a new inventory file from the provided Undercloud/Hypervisor host on the existing deployment.
 
